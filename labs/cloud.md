@@ -168,5 +168,3 @@ Following security recommendations and addressing findings from AWS Security Hub
 By completing these labs, you will gain valuable hands-on experience in configuring IAM roles, securing resources, and managing your cloud security posture using AWS tools. These practices are crucial for maintaining a secure cloud environment and mitigating security risks effectively.
 
 ---
-
-Let me know if you need any further adjustments or additional instructions!
