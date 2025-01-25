@@ -128,6 +128,96 @@ Each lab folder includes:
 
 ---
 
+Certainly! Here's the updated **grading criteria** to ensure everything totals to **100%**, incorporating the changes and making sure all elements are covered for a more balanced distribution.
+
+---
+
+## **Lab Grading Criteria**
+
+### **Lab 1: Database Access Control Model (SQL Example) – 30%**
+This lab covers role-based access control (RBAC), privilege assignment, and testing for different users (Admin, Manager, User, Guest).
+
+#### Grading Breakdown:
+1. **Lab Setup and Execution (15%)**
+   - Proper setup and execution of the database, including tables and roles.
+   - Successfully created users with different roles and tested access control functionality.
+   
+2. **Role and Privileges Assignment (10%)**
+   - Correctly assigned roles and privileges (e.g., Admin can perform all operations, Manager has restricted access to orders, User and Guest have minimal access).
+   - Implemented the **Principle of Least Privilege**.
+   
+3. **Testing and Documentation (5%)**
+   - Thorough testing of user access control with detailed explanations in the report.
+   - Clear reflections on the results and any challenges encountered.
+
+---
+
+### **Lab 2: Database Access Example – 30%**
+This lab focuses on implementing data integrity constraints and setting up audit logging with SQL triggers.
+
+#### Grading Breakdown:
+1. **Data Integrity Constraints Implementation (10%)**
+   - Correctly implemented constraints (e.g., `CHECK`, `FOREIGN KEY`, `NOT NULL`) on relevant tables to ensure data quality and consistency.
+   
+2. **Audit Logging and Trigger Setup (10%)**
+   - Properly set up the audit logging system with a trigger to log sensitive operations (insert, update, delete).
+   - Ensured that the audit log captures necessary details (user_id, action, timestamp).
+   
+3. **Testing and Documentation (10%)**
+   - Screenshots of successful operations (e.g., audit log entries).
+   - Clear explanation of why audit logging and data integrity are critical for database security.
+   - Reflection on how these practices apply in the real world.
+
+---
+
+### **Cloud Security Lab – 30%**
+This lab focuses on cloud IAM configuration, role-based access, and security posture management tools (AWS, GCP, or Azure).
+
+#### Grading Breakdown:
+1. **IAM Configuration and Role Management (15%)**
+   - Correctly configured IAM roles with specific permissions for cloud resources (e.g., EC2, VM, etc.).
+   - Applied **Principle of Least Privilege** in IAM configurations.
+   - Implemented roles that enforce secure access control within the cloud environment.
+   
+2. **Cloud Security Posture Management (10%)**
+   - Configured cloud security tools (e.g., AWS Security Hub, GCP Security Command Center, or Azure Security Center) to monitor security posture.
+   - Monitored resources and set up security alerts for misconfigurations or vulnerabilities.
+   
+3. **Testing and Documentation (5%)**
+   - Screenshots and explanations of the cloud configuration and security posture setup.
+   - Reflection on the importance of IAM and cloud security monitoring.
+
+---
+
+### **Overall Reflection and Report – 10%**
+Your **overall reflection** should discuss:
+- **What you learned** from the labs, highlighting key concepts like RBAC, IAM, audit logging, and cloud security posture.
+- **Challenges faced** during the labs and how you overcame them.
+- **Real-world application** of these concepts, emphasizing how the skills learned can be applied to enhance security in actual enterprise systems.
+
+#### Grading Breakdown:
+1. **Comprehensive Reflection (5%)**
+   - Insightful reflection that ties together the concepts from both database and cloud labs.
+   - Clear, well-thought-out connections to real-world scenarios.
+
+2. **Clarity and Detail (5%)**
+   - Well-organized and concise reflection.
+   - Thorough explanation of the practical application of the learned skills.
+
+---
+
+### **Total Grading Breakdown:**
+
+| **Component**                            | **Percentage** |
+|------------------------------------------|----------------|
+| **Lab 1: Database Access Control Model** | 30%            |
+| **Lab 2: Database Access Example**       | 30%            |
+| **Cloud Security Lab**                   | 30%            |
+| **Overall Reflection and Report**        | 10%            |
+| **Total**                                | **100%**       |
+
+---
+
 ## **Additional Information**
 
 - **Cloud Labs**: For Cloud Security labs, you may need access to cloud platforms like AWS, Google Cloud, or Azure. Ensure that your account is set up with the appropriate permissions to perform tasks such as IAM configuration and resource management.
