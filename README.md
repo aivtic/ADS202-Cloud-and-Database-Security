@@ -75,17 +75,12 @@ Below is the structure of the repository. Each folder contains lab instructions,
 ```
 /ADS202-Cloud-and-Database-Security
 |-- /assignments           # Assignment instructions and resources
-|   |-- assignment1.md
-|   |-- assignment2.md
+|   |-- databse_lab_1&2.md
+|   
 |
-|-- /docs                  # Documentation for each lab and concept
-|   |-- /lab1              # Documents related to Lab 1 (Database Access Control)
-|   |-- /lab2              # Documents related to Lab 2 (Database Access Example)
-|   |-- /cloud-security    # Documents related to Cloud Security
-|
-|-- /labs                  # SQL scripts and code files for labs
-|   |-- /lab1              # SQL scripts and setup for Lab 1
-|   |-- /lab2              # SQL scripts and setup for Lab 2
+|-- /labs                      
+|   |-- /labs 1&2              
+|   |-- /lab 3                 
 |
 |-- README.md              # This file
 |-- LICENSE                # License information
