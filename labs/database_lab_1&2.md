@@ -1,5 +1,5 @@
 
-## **ADS 202 Database Security Labs Project: Information Assurance and Network Security – Database Security**
+## **ADS 202 Database Security Labs: Information Assurance and Network Security Database Security**
 
 This lab will provide students with hands-on experience in securing databases through access control management, role-based access, privilege enforcement, and auditing. The students will learn how to configure database users, create access control models, and implement audit logging to track sensitive operations.
 
