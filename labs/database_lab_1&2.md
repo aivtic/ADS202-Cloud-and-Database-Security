@@ -151,6 +151,92 @@ We'll create four users: `admin`, `manager`, `user`, and `guest`, each with diff
 
 ---
 
+### **Reconfiguring XAMPP for phpMyAdmin Login**
+
+To ensure that **phpMyAdmin** asks for login credentials, follow these steps:
+
+1. **Set the Correct Permissions**:
+   Open a terminal and run the following command to ensure that the `config.inc.php` file has the correct permissions:
+
+   ```bash
+   sudo chmod 644 /opt/lampp/phpmyadmin/config.inc.php
+   ```
+
+   This will adjust the permissions and prevent the "world-writable" error.
+
+2. **Edit the Configuration File**:
+   Now, open the `config.inc.php` file to make changes. You can use a text editor like `nano` to open the file:
+
+   ```bash
+   sudo nano /opt/lampp/phpmyadmin/config.inc.php
+   ```
+
+3. **Find the Authentication Type**:
+   Once the file is open, search for the following line in the file:
+
+   ```php
+   $cfg['Servers'][$i]['auth_type'] = 'config';
+   ```
+
+4. **Change the Authentication Type**:
+   Change `'config'` to `'cookie'` so that phpMyAdmin will prompt for a login every time:
+
+   ```php
+   $cfg['Servers'][$i]['auth_type'] = 'cookie';
+   ```
+
+   **Why this change?**
+   - The `config` authentication type stores the login credentials in the configuration file, which is not secure.
+   - Changing it to `cookie` will prompt users to log in through a browser, making it more secure.
+
+5. **Save the Changes**:
+   After making the change, press `Ctrl+X`, then `Y` to save and `Enter` to confirm the changes.
+
+---
+
+### **Testing Login Credentials**
+
+1. **Open a Private/Incognito Browser Window**:
+   To test the changes, open an incognito or private browsing window in your browser.
+
+2. **Navigate to phpMyAdmin**:
+   Open the phpMyAdmin URL, typically:
+
+   ```
+   http://localhost/phpmyadmin
+   ```
+
+3. **Login Prompt**:
+   You should now see a login prompt. Use the admin credentials you created earlier:
+
+   - **Username**: `admin`
+   - **Password**: `adminpass`
+
+   If the prompt appears, it means your changes were successful.
+
+4. **Test with Different Logins**:
+   You can also test logging in with other user roles, such as `manager`, `user`, or `guest`, using the credentials you set up:
+
+   - For **manager**:
+     - **Username**: `manager`
+     - **Password**: `managerpass`
+
+   - For **user**:
+     - **Username**: `user`
+     - **Password**: `userpass`
+
+   - For **guest**:
+     - **Username**: `guest`
+     - **Password**: `guestpass`
+
+---
+
+### **Proceed with the Lab**
+
+Once you've confirmed the login prompt works as expected and you've successfully logged in with various users, you can proceed with the rest of the **Database Security Lab** steps.
+
+---
+
 ### **Step 5: Test User Access**
 
 Now, we will simulate logging in as each user and test their access levels.
